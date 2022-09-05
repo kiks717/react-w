@@ -1,11 +1,9 @@
 import React from 'react';
 import {
        BasketAsideCont,
-      //  BasketHeadline,
        CartItems,
        CustomButton,
        IfCartDiv,
-      //  InsideCartItems, 
        ItemTitle,
        Minus,
       Plus,
