@@ -9,7 +9,7 @@ import { popularProducts } from "./components/Products/data";
 import { GlobalStyle } from "./globalStyles";
 import SignIn from "./components/SignIn";
 import Basket from "./pages/Cart/Basket";
-import file from './pages/Cart/file'
+// import file from './pages/Cart/file'
 import { useState } from "react";
 import Slider from "./components/Slider";
 import { SliderData } from "./components/Slider/file";
@@ -20,7 +20,7 @@ import UseModal from "./pages/Cart/Modal/useModal";
 
 
 function App() {
-  const { products } = file;
+//   const { products } = file;
   const [cartItems, setCartItems] = useState([]);
   const [isOpen, setIsOpen] = useState(false)
 
@@ -73,7 +73,7 @@ function App() {
        id="products"
        heading="Chose your favourite" 
        data={productData}
-       products={products}  
+//        products={products}  
        onAdd={onAdd} 
        onRemove={onRemove}/>
       <Feature/>
@@ -81,16 +81,11 @@ function App() {
         heading="Sweet Treats for YOU"
         id="explore"
         data={popularProducts} 
-        products={products} 
+//    products={products} 
         onAdd={onAdd} 
         onRemove={onRemove} />
       <SignIn/>
       <Footer/>
-      {/* <Header 
-        countCartItems={cartItems.length}/> */}
-         {/* <Main products={products}  onAdd={onAdd}></Main> */}
-         {/* main is responsible to render products */}
-
       </BrowserRouter>
   );
 }
