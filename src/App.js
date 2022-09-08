@@ -6,15 +6,16 @@ import Hero from "./components/HeroSection";
 import Products from "./components/Products";
 import { productData } from "./components/Products/data";
 import { popularProducts } from "./components/Products/data";
-// import Slider from './components/Slider'
+import Slider from './components/Slider'
 import { GlobalStyle } from "./globalStyles";
 import SignIn from "./components/SignIn";
 import Header from "./pages/Cart/Header";
-// import Main from "./pages/Cart/Main";
 import Basket from "./pages/Cart/Basket";
 import file from './pages/Cart/file'
 import { useState } from "react";
 // import Modal from "./components/Modal";
+
+
 function App() {
   const { products } = file;
   const [cartItems, setCartItems] = useState([]);
@@ -64,13 +65,9 @@ function App() {
         products={products} 
         onAdd={onAdd} 
         onRemove={onRemove} />
-      {/* <Slider/> */}
+      <Slider/>
       <SignIn/>
       <Footer/>
-      {/* <Header 
-        countCartItems={cartItems.length}/> */}
-         {/* <Main products={products}  onAdd={onAdd}></Main> */}
-         {/* main is responsible to render products */}
       <Basket
         cartItems={cartItems}
         onAdd={onAdd} 
